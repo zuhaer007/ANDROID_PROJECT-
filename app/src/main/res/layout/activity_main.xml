@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="INN VISION"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Hotel Image -->
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="Hotel Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hotel_image" />
+
+    <!-- Checkbox (Agree to Terms) -->
+    <CheckBox
+        android:id="@+id/agree_terms_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree to Terms and Conditions" />
+
+    <!-- RadioButton (Room Type Selection) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Room Type:" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Room" />
+
+        <RadioButton
+            android:id="@+id/radio_double"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Double Room" />
+    </RadioGroup>
+
+    <!-- RatingBar (Rate the Hotel) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate our Service:" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <!-- SeekBar (Set Stay Duration) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Number of Nights:" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30" />
+
+    <TextView
+        android:id="@+id/seekbar_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="1 night" />
+
+    <!-- Switch (Enable Notifications) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications:" />
+
+    <Switch
+        android:id="@+id/switch_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hotel_image" />
+
+</LinearLayout>
