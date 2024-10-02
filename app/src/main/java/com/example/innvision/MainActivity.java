@@ -11,6 +11,7 @@ import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.regex.Pattern;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -94,6 +95,34 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, summary.toString(), Toast.LENGTH_LONG).show();
         });
     }
+    private boolean validateForm() {
+        TextView nameInput = null;
+        String name = nameInput.getText().toString().trim();
+        TextView emailInput = null;
+        String email = emailInput.getText().toString().trim();
+        TextView phoneInput = null;
+        String phone = phoneInput.getText().toString().trim();
+
+        // Regex patterns
+        Pattern namePattern = Pattern.compile("^[A-Za-z ]{3,}$");
+        Pattern emailPattern = Pattern.compile("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+        Pattern phonePattern = Pattern.compile("^[0-9]{10}$");
+
+        if (!namePattern.matcher(name).matches()) {
+            nameInput.setError("Invalid name (minimum 3 characters)");
+            return false;
+        }
+
+        if (!emailPattern.matcher(email).matches()) {
+            emailInput.setError("Invalid email address");
+            return false;
+        }
+
+        if (!phonePattern.matcher(phone).matches()) {
+            phoneInput.setError("Invalid phone number (10 digits)");
+            return false;
+        }
+
+        return true;
+    }
 }
-
-
