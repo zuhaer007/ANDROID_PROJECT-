@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- App Name -->
+
     <TextView
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
@@ -17,7 +17,7 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <!-- Hotel Image -->
+
     <ImageView
         android:id="@+id/hotel_image"
         android:layout_width="match_parent"
@@ -26,14 +26,14 @@
         android:scaleType="centerCrop"
         android:src="@drawable/hotel_image" />
 
-    <!-- Checkbox (Agree to Terms) -->
+
     <CheckBox
         android:id="@+id/agree_terms_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agree to Terms and Conditions" />
 
-    <!-- RadioButton (Room Type Selection) -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             android:text="Double Room" />
     </RadioGroup>
 
-    <!-- RatingBar (Rate the Hotel) -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
         android:numStars="5"
         android:stepSize="1.0" />
 
-    <!-- SeekBar (Set Stay Duration) -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
         android:layout_gravity="center"
         android:text="1 night" />
 
-    <!-- Switch (Enable Notifications) -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <!-- Submit Button -->
+
     <Button
         android:id="@+id/submit_button"
         android:layout_width="wrap_content"
@@ -110,10 +110,5 @@
         android:layout_marginTop="20dp"
         android:text="Submit" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/hotel_image" />
 
 </LinearLayout>
