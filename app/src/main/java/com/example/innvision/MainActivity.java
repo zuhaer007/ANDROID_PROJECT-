@@ -1,9 +1,11 @@
 package com.example.innvision;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RatingBar;
@@ -11,6 +13,9 @@ import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -125,4 +130,14 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
+    // Sample data
+    List<ClipData.Item> itemList = new ArrayList<>();
+itemList.add(new ClipData.Item"Room 101", "Single Room");
+itemList.add(new clipdata.Item"Room 102", "Double Room");
+
+    // Setup ListView
+    ListView customListView = findViewById(R.id.custom_list_view);
+    CustomListAdapter adapter = new CustomListAdapter(this, itemList);
+customListView.setAdapter(adapter);
+
 }

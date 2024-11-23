@@ -13,6 +13,12 @@
         android:theme="@style/Theme.INNVISION"
         tools:targetApi="31">
         <activity
+            android:name=".List_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Custom_listview"
+            android:exported="false" />
+        <activity
             android:name=".StatusbarActivity"
             android:exported="false" />
         <activity

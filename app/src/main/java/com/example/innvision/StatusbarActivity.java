@@ -3,7 +3,7 @@ package com.example.innvision;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class StatusBarActivity extends AppCompatActivity {
+class StatusBarActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

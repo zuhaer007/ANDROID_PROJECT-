@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_description" type="id" />
+    <item name="custom_list_view" type="id">list_view</item>
+    <item name="expandable_list_view" type="id">expandable_listview</item>
+    <item name="recycler_view" type="id">recycler_view</item>
+    <item name="item_title" type="id">item_title</item>
+</resources>
